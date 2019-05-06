@@ -48,7 +48,7 @@
 				<div class="feature-grid">
 					{%for result in results%}
 					<div class="feature">
-						<div class="image rounded">
+						<div class="image rounded" style="{%if not result.thumbnail%}display:none{%endif%}">
 							<img style="{%if not result.thumbnail%}visibility:hidden{%endif%}" src="{{result.thumbnail}}" alt="" />
 						</div>
 						<div class="content">

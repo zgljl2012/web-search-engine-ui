@@ -47,6 +47,8 @@ def search():
     if query :
         # query search engine
         try :
+            host="127.0.0.1"
+            port=8000
             r = requests.post('http://%s:%s/search'%(host, port), data = {
                 'query':query,
                 'hits':hits,

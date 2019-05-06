@@ -2021,14 +2021,15 @@
 			float: left;
 			margin-bottom: 3em;
 			width: 100%;
+			text-align: left;
 		}
 
 			.feature-grid .feature .content {
-				width: 60%;
+				width: 88%;
 			}
 
 			.feature-grid .feature .image {
-				width: 30%;
+				width: 10%;
 			}
 
 				.feature-grid .feature .image img {
@@ -2036,16 +2037,16 @@
 					max-width: 120px;
 				}
 
-			.feature-grid .feature:nth-child(odd) .content, .feature-grid .feature:nth-child(odd) .image {
-				float: right;
-				margin-right: 5%;
-				/*text-align: right;*/ /*TEST*/
+			.feature-grid .feature .content{
+				float: left;
+				margin-left: 2%;
+				text-align: left; /*TEST*/
 			}
 
-			.feature-grid .feature:nth-child(even) .content, .feature-grid .feature:nth-child(even) .image {
+			.feature-grid .feature .image {
 				float: left;
-				margin-left: 5%;
-				text-align: left;
+				margin-left: 0%;
+				text-align: left; /*TEST*/
 			}
 
 		@media screen and (max-width: 1280px) {
@@ -2362,12 +2363,12 @@
 			}
 
 		.image.rounded {
-			border-radius: 100%;
+			border-radius: 5%;
 		}
 
 			.image.rounded img {
-				border: solid 0.5em rgba(144, 144, 144, 0.25);
-				border-radius: 100%;
+				border: solid 0.1em rgba(144, 144, 144, 0.25);
+				border-radius: 5%;
 			}
 
 		.image.captioned {
